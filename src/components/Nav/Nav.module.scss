@@ -1,0 +1,15 @@
+nav{
+  width: 100vw;
+  padding: 32px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  & div{
+    display: flex;
+    gap: 48px;
+    & div{
+      gap: 8px;
+    }
+  }
+}

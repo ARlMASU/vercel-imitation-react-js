@@ -1,0 +1,45 @@
+.wrapper {
+  border-radius: 50px;
+  display: flex;
+  padding: 16px 24px;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+
+  &.squared{
+    border-radius: 8px;
+    padding: 8px 20px;
+  }
+
+  &Filled {
+    background-color: #fff;
+    & p {
+      color: black;
+    }
+    &:hover {
+      background-color: #d7d7d7;
+    }
+  }
+
+  &Transparent {
+    border: 1px solid grey;
+    & p {
+      color: white;
+    }
+    &:hover {
+      background-color: rgb(27, 27, 27);
+    }
+  }
+
+  & p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    &.smallFontSize{
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

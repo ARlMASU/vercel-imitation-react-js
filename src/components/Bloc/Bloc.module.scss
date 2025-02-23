@@ -1,0 +1,42 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  border: #414141 1px solid;
+  width: 100%;
+  padding: 128px 48px;
+  gap: 36px;
+  text-align: center;
+  animation: moveIn 1.4s ease forwards;
+  & h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -6%;
+  }
+  & p {
+    font-size: 24px;
+    letter-spacing: -6%;
+    color: #ababab;
+    font-weight: 300;
+    max-width: 700px;
+  }
+  & div {
+    display: flex;
+    flex-flow: row;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@keyframes moveIn {
+  from {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
